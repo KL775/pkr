@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>Pricing</h1>
+	<ul class = "list-group">
+		{%  for price in pricing %}
+			<li class = "list-group-item">
+				<a href ="pricing/{{price.id}}">{{price.type}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

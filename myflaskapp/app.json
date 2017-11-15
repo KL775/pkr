@@ -1,0 +1,16 @@
+{
+  "name": "PKR",
+  "description": "Inventory Management App.",
+  "image": "heroku/python",
+  "repository": "https://github.com/KL775/pkr",
+  "keywords": ["python", "flask" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
